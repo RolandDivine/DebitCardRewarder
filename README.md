@@ -18,3 +18,11 @@ How to Use
 
 Solidity 0.5.0 or higher
 OpenZeppelin 2.3.0 or higher
+
+# To deploy the smart contract, you will need to have a local Ethereum blockchain setup or access to a testnet or mainnet.
+
+Once you have that set up, you will need to use a Solidity compiler, such as Remix, to compile the Solidity code and generate the contract ABI and bytecode.
+
+Next, you will need to use a Web3 provider, such as MetaMask, to connect to the Ethereum blockchain and send a transaction to deploy the contract. You will need to have some Ether in your account to pay for the deployment transaction.
+
+Once the contract is deployed, you can use the contract ABI and the contract address to interact with the contract from your Web3.js code. You can do this by creating an instance of the contract using the Web3.js contract object and calling its methods.

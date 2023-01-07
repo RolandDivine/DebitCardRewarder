@@ -19,10 +19,29 @@ How to Use
 Solidity 0.5.0 or higher
 OpenZeppelin 2.3.0 or higher
 
-# To deploy the smart contract, you will need to have a local Ethereum blockchain setup or access to a testnet or mainnet.
+# To deploy the smart contract, you will need to use a tool like Truffle or Remix.
 
-Once you have that set up, you will need to use a Solidity compiler, such as Remix, to compile the Solidity code and generate the contract ABI and bytecode.
+>To use Truffle, follow these steps:
 
-Next, you will need to use a Web3 provider, such as MetaMask, to connect to the Ethereum blockchain and send a transaction to deploy the contract. You will need to have some Ether in your account to pay for the deployment transaction.
+1.Install Truffle by running npm install -g truffle
 
-Once the contract is deployed, you can use the contract ABI and the contract address to interact with the contract from your Web3.js code. You can do this by creating an instance of the contract using the Web3.js contract object and calling its methods.
+2.Create a new Truffle project by running truffle init
+
+3.Create a new file for your smart contract in the contracts directory, and copy the Solidity code into it
+In the Truffle configuration file (truffle-config.js), set the network you want to deploy to (e.g. development, mainnet, etc.)
+
+4.Run truffle compile to compile the smart contract
+
+5.Run truffle migrate to deploy the smart contract to the network
+
+>To use Remix, follow these steps:
+
+1.Go to https://remix.ethereum.org
+
+2.Copy the Solidity code into the code editor
+
+3.Click the "Create" button to create a new contract
+
+4.Click the "Deploy" button to deploy the contract to the network
+
+5.Once the contract is deployed, you can use the Web3.js code to interact with it by replacing the contractAddress and contractAbi variables with the actual contract address and ABI of the deployed contract. You will also need to make sure that you have a Web3 provider set up (e.g. Metamask), and that you are connected to the same network as the contract.
